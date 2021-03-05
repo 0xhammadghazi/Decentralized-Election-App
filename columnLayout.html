@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--Only if your resolution is 1600x900 or above (1920x1080 recommended)-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Application</title>
+    <link rel="stylesheet" href="columnLayout.css" type="text/css" />
+  </head>
+  <body>
+    <div class="headingDiv">
+      <p id="mainHeading">Stakeholder Voting <h5>[Ropsten Network]</h5></p>
+      <p id="subHeading">
+        <i>Vote your <s>shares</s> tokens</i>
+      </p>
+    </div>
+    <div class="container">
+      <div class="column-left">
+        <div id="divTokenInfo">
+          <table>
+            <thead>
+              <tr>
+                <th>Total Supply Of Tokens</th>
+                <th>Tokens Up For Sale</th>
+                <th>Tokens Sold</th>
+                <th>Price Per Token</th>
+                <th>Balance In The Contract</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="totalSupply"></td>
+                <td id="tokenBalance"></td>
+                <td id="tokenSold"></td>
+                <td id="pricePerToken"></td>
+                <td id="balance"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="divProfile">
+          <h2 id="profile">Your Profile</h2>
+          <p id="userAddress"></p>
+          <div id="displayVoterInfo"></div>
+        </div>
+      </div>
+      <div class="column-center">
+        <div id="candidateInfo">
+          <table>
+            <thead>
+              <tr>
+                <th>Candidates</th>
+                <th>Votes</th>
+              </tr>
+            </thead>
+            <tbody id="candidateResult"></tbody>
+          </table>
+        </div>
+        <form onsubmit="vote()" action="#" id="voteForm">
+          <select id="selectCandidate">
+            <option value="0">Select candidate</option>
+          </select>
+          <input
+            type="text"
+            id="numberOfTokens"
+            placeholder="Total number of tokens to vote"
+          />
+          <button type="submit" id="btnVote">Vote</button>
+        </form>
+      </div>
+      <div class="column-right">
+        <form action="#" onsubmit="buyTokens()">
+          <h2 id="purchase">Purchase Tokens</h2>
+          <input
+            type="text"
+            id="tokensToBuy"
+            placeholder="Number of tokens to buy"
+          />
+          <button type="submit" id="btnBuy">Buy</button>
+        </form>
+        <form action="#" onsubmit="searchVoterInfo()">
+          <h2 id="search">Search Voter Information</h2>
+          <input
+            type="text"
+            id="voterAddress"
+            placeholder="Enter the voter address"
+          />
+          <button type="submit" id="btnSearch">Search</button>
+        </form>
+        <div id="displaySearchInfo"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+  <script src="./index.js"></script>
+</html>
+

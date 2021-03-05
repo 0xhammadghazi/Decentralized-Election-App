@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+/*Only if your resolution is 1600x900 or above (1920x1080 recommended)*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+table {
+  background: #012b39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+  width: 100%;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #e2b842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+  height: 1cm;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4f5f64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+  border-bottom: 1px solid #364043;
+}
+
+.headingDiv {
+  line-height: 1px;
+  text-align: center;
+  background-color: bisque;
+  height: 6cm;
+  overflow: hidden;
+}
+
+#mainHeading {
+  font-size: 300%;
+  margin-bottom: 2.5%;
+  margin-top: 6%;
+}
+
+#subHeading {
+  font-size: 120%;
+  margin-bottom: 10%;
+}
+
+#selectCandidate {
+  width: 34%;
+  height: 0.9cm;
+  border: 2px solid;
+  padding-left: 10px;
+  margin-left: 3%;
+  margin-right: 2px;
+}
+
+#numberOfTokens {
+  width: 45%;
+  height: 28px;
+  border: 2px solid;
+  padding-left: 10px;
+  margin-right: 2px;
+}
+
+#btnVote {
+  height: 33px;
+  width: 13%;
+  border: 2px solid;
+  background-color: bisque;
+}
+
+.column-left {
+  float: left;
+  width: 28%;
+  margin-top: 4%;
+}
+.column-right {
+  float: right;
+  width: 28%;
+  margin-top: 3.2%;
+  margin-left: 3.5%;
+}
+.column-center {
+  display: inline-block;
+  width: 38%;
+  margin-top: 4%;
+  margin-left: 2.5%;
+  margin-bottom: 2%;
+}
+
+#tokensToBuy,
+#voterAddress {
+  width: 60%;
+  height: 30px;
+  padding-left: 10px;
+  border: 2px solid;
+  margin-bottom: 5%;
+}
+
+#btnBuy,
+#btnSearch {
+  width: 15%;
+  height: 36px;
+  border: 2px solid;
+  margin-left: 3px;
+  background-color: bisque;
+}
+
+#purchase,
+#search {
+  margin-bottom: 0.25%;
+}
+
+#tokens {
+  margin-left: 26%;
+  margin-bottom: -2%;
+}
+
+#divProfile {
+  padding-left: 10px;
+  margin-left: 3.5%;
+  margin-top: 6.5%;
+  border: 2px solid;
+  margin-right: -3%;
+  margin-bottom: 4%;
+}
+
+#displaySearchInfo:not(:empty) {
+  border: 2px solid;
+  margin-right: 4%;
+  padding-left: 10px;
+  margin-bottom: 2%;
+}
+
+#profile {
+  border-bottom: 2px solid;
+  text-indent: 31%;
+  margin-right: 2%;
+}

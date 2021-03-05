@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 0px;
+  margin: 1em;
+}
+table {
+  width: fit-content;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+th {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: left;
+  height: 1cm;
+  background-color: lightgray;
+}
+td {
+  font-weight: 400;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+.headingDiv {
+  line-height: 1px;
+  text-align: center;
+  background-color: bisque;
+  height: 5cm;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+}
+
+#mainHeading {
+  margin-bottom: 30px;
+  margin-top: 75px;
+  font-size: 38px;
+  white-space: nowrap;
+}
+
+#subHeading {
+  margin-bottom: 55px;
+  font-size: 20px;
+}
+
+#subHeading1 {
+  font-size: 12px;
+}
+
+#tokensToBuy,
+#voterAddress,
+#numberOfTokens {
+  height: 2em;
+  border: 1px solid;
+  margin-bottom: 15px;
+  padding-left: 8px;
+}
+#selectCandidate {
+  height: 2.35em;
+  border: 1px solid;
+  margin-bottom: 10px;
+  padding-left: 8px;
+}
+
+#btnSearch,
+#btnVote,
+#btnBuy {
+  height: 2.3em;
+  border: 1px solid;
+}
+
+#divTokenInfo {
+  margin-top: 220px;
+}
+
+#divProfile {
+  width: fit-content;
+  padding: 10px;
+  border-style: double;
+}
+
+#displaySearchInfo:not(:empty) {
+  margin-top: 10px;
+  border-style: double;
+  width: fit-content;
+  padding: 10px;
+}
+
+#candidateTable {
+  width: 300px;
+}
+
+#divVote,
+#divBuy,
+#divSearch {
+  background-color: #fcf8e3;
+  width: 275px;
+  padding-left: 5px;
+  border-radius: 9px;
+}
+
+h3 {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+#profile {
+  border-bottom: 1px solid black;
+}

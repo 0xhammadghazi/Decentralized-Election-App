@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--website url: http://electionapp.surge.sh/-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Application</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <div class="headingDiv">
+      <p id="mainHeading">Stakeholder Voting</p>
+      <p id="subHeading">
+        <i>Vote your <s>shares</s> tokens</i>
+      </p>
+      <p id="subHeading1">[Ropsten Network]</p>
+    </div>
+    <div id="divTokenInfo">
+      <table>
+        <thead>
+          <tr>
+            <th>Total Supply Of Tokens</th>
+            <th>Tokens Up For Sale</th>
+            <th>Tokens Sold</th>
+            <th>Price Per Token</th>
+            <th>Balance In The Contract</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="totalSupply"></td>
+            <td id="tokenBalance"></td>
+            <td id="tokenSold"></td>
+            <td id="pricePerToken"></td>
+            <td id="balance"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="divProfile">
+      <h2 id="profile">Your Profile</h2>
+      <p id="userAddress"></p>
+      <div id="displayVoterInfo"></div>
+    </div>
+    <div id="candidateInfo">
+      <table id="candidateTable">
+        <thead>
+          <tr>
+            <th>Candidates</th>
+            <th>Votes</th>
+          </tr>
+        </thead>
+        <tbody id="candidateResult"></tbody>
+      </table>
+    </div>
+    <div id="divVote">
+      <h3>Vote</h3>
+      <form onsubmit="vote()" action="#" id="voteForm">
+        <select id="selectCandidate">
+          <option value="0">Select candidate</option>
+        </select>
+        <br />
+        <input
+          type="text"
+          id="numberOfTokens"
+          placeholder="Total no of tokens to vote"
+        />
+        <button type="submit" id="btnVote">Vote</button>
+      </form>
+    </div>
+    <div id="divBuy">
+      <form action="#" onsubmit="buyTokens()">
+        <h3 id="purchase">Purchase Tokens</h3>
+        <input
+          type="text"
+          id="tokensToBuy"
+          placeholder="Number of tokens to buy"
+        />
+        <button type="submit" id="btnBuy">Buy</button>
+      </form>
+    </div>
+    <div id="divSearch">
+      <form action="#" onsubmit="searchVoterInfo()">
+        <h3 id="search">Search Voter Information</h3>
+        <input
+          type="text"
+          id="voterAddress"
+          placeholder="Enter the voter address"
+        />
+        <button type="submit" id="btnSearch">Search</button>
+      </form>
+    </div>
+
+    <div id="displaySearchInfo"></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+  <script src="./index.js"></script>
+</html>
