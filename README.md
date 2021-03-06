@@ -1,5 +1,5 @@
 # Decentralized Stakeholder Election Application on Ropsten Network
-Website: electionapp.surge.sh/
+[Website](electionapp.surge.sh/)
 
 You have to:
 * Install the metamask plugin and create an account on Ropsten Test Network and load some Ether.
